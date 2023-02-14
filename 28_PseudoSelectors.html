@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+</head>
+<style>
+    .container{
+        width: 233px;
+        margin: auto;
+    }
+    input{
+        display: block;
+    }
+    input[type='text']{
+        padding: 20px;
+        border: 2px solid red;
+    }
+    a[target]{
+        font-size: 44px;
+        color: violet;
+    }
+    a[target='_self']{
+        font-size: 14px;
+        color: blue;
+    } 
+    input[type='email']{
+        color: crimson;
+        border: 2px solid black;
+    }
+    /* li:nth-child(3){
+        color: red;
+    }
+    li:nth-child(2n){
+        color: orchid;
+    } */
+    li:nth-child(even){
+        color: rgb(255, 0, 0);
+    }
+    li:nth-child(odd){
+        color: rgb(9, 255, 0);
+    }
+</style>
+<body>
+    <div class="container">
+
+        <form action="" class="Form-control">
+            <h1><a href="http://google.com" target="_blank">Go to Google</a></h1>
+            <h1><a href="http://facebook.com" target="_self">Go to Facebook</a></h1>
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="email" placeholder="Enter your email">
+            <input type="submit" value="submit">
+
+        </form>
+        <ul>
+            <li class="item" id="item1">Item1</li>
+            <li class="item" id="item2">Item2</li>
+            <li class="item" id="item3">Item3</li>
+            <li class="item" id="item4">Item4</li>
+            <li class="item" id="item5">Item5</li>
+            <li class="item" id="item1">Item6</li>
+            <li class="item" id="item2">Item7</li>
+            <li class="item" id="item3">Item8</li>
+            <li class="item" id="item4">Item9</li>
+            <li class="item" id="item5">Item10</li>
+        </ul>
+    </div>
+</body>
+</html>

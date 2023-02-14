@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>HTML INPUTS AND FORMS</h2>
+    <form action="backend.php">
+        <label for="name">
+            <div>
+                Name: <input type="text" name="Myname" id="name">
+            </div>
+            <br>
+
+            <div>
+                Email: <input type="email" name="Myemail" id="name">
+            </div>
+            <br>
+
+            <div>
+                Date: <input type="date" name="Mydate" id="name">
+            </div>
+            <br>
+
+            <div>
+                Bonus: <input type="number" name="Mybonus" id="name">
+            </div>
+            <br>
+
+            <div>
+                Gender: Male<input type="radio" name="Mygender" id="name"> Female<input type="radio" name="Mygender">
+                Other<input type="radio" name="Mygender">
+            </div>
+            <br>
+
+            <div>
+                Write about yourself: <br><textarea name="Mytext" cols="80" rows="20"></textarea>
+            </div>
+            <br>
+        </label>
+
+        <div>
+            <label for="car">Car
+                <select name="Mycar">
+                    <option value="Ind">Indica</option>
+                    <option value="Swt">Swift</option>
+                </select>
+            </label>
+        </div>
+        <br>
+
+        <div>
+            <input type="Submit" value="Submit Now">
+            <input type="Reset" value="Reset Now">
+        </div>
+
+    </form>
+</body>
+
+</html>

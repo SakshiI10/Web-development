@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+</head>
+<style>
+    div li p{
+        color: red;
+        background-color: rgb(191, 221, 130);
+    }
+    div ul li{
+        color: brown;
+        background-color: rgb(191, 221, 130);
+    }
+    div > p{
+        color: blue;
+        background-color: skyblue;
+    }
+    div + p{
+        color: green;
+        background-color: aquamarine;
+    }
+</style>
+<body>
+    <h1>CSS Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is first para</p></li>
+                <li>This is second para</li>
+                <p>This is third para</p>
+            </ul>
+            <p>This is fourth para</p>
+        </div>
+        <p>This is fifth para</p>
+    </div>
+    <p>This is sixth para</p>
+</body>
+</html>
