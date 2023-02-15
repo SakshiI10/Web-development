@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Creating layout using Grid </title>
+    <style>
+    .container{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        'navbar navbar navbar navbar' 
+        'section section section aside'
+        'footer footer footer footer ';
+    }
+    .item{
+        background-color: rgb(142, 240, 96);
+        border: 3px solid black;
+        padding: 20px 23px;
+    }
+    #navbar{
+        grid-area: navbar;
+    }
+    #section{
+        grid-area: section;
+    }
+    #aside{
+        grid-area: aside;
+    }
+   footer{
+        grid-area: footer;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item"><center>Home About Contact Us</center></div>
+
+        <div id="section" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ducimus iusto vero quos eligendi nam voluptatem similique pariatur, id consectetur minima culpa dicta doloremque maiores laborum alias repellendus perspiciatis doloribus rem sit ex odio. Non, totam. Quibusdam consequatur illo neque possimus dolores accusamus quam ipsum impedit deleniti laudantium, molestias suscipit similique animi unde! Dolorem rem aliquid totam eaque ducimus dolore quam consectetur magni soluta doloribus cupiditate dicta adipisci, tempore hic vero reiciendis? Aliquam, doloremque quisquam. Alias ex at non amet expedita, dolores fuga ducimus dolor, asperiores quis cupiditate provident, delectus placeat quisquam eaque doloremque atque eveniet accusamus. Blanditiis, nihil praesentium.
+        </div>
+
+        <div id="aside" class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam laborum, voluptatem nulla aliquid veniam non quis, eveniet ipsam debitis est corrupti tempora aut recusandae. Hic, iure! Eaque porro ducimus reiciendis, animi quia nesciunt culpa reprehenderit facilis assumenda? Sapiente totam rem nesciunt in! Maiores vero ab iste aliquam dolorem ipsa similique repudiandae quaerat tempore consequuntur eius, sed expedita repellendus voluptatum facere voluptatibus debitis? Eius illo tenetur distinctio minus ad eveniet ipsum ut, provident unde libero quam nam quaerat tempora nisi, impedit fugit id corporis molestias amet voluptatem hic officiis praesentium rerum. Ipsam placeat unde eligendi nesciunt delectus illo, rerum nobis autem!
+        </div>
+
+        <footer class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quo libero cumque.</footer>
+
+        <!-- <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+        <div class="item">Item-13</div>
+        <div class="item">Item-14</div> -->
+    </div>
+</body>
+</html>
