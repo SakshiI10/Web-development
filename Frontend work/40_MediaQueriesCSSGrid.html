@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Queries in CSS grid</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer ';
+    }
+
+    @media only screen and (max-width:300px) {
+        body {
+            background-color: red;
+            text-align: justify;
+        }
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer ';
+        }
+        aside{
+            display: none;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media only screen and (min-width: 300px) and (max-width:500px) {
+        body {
+            background-color: blue;
+        }
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer ';
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 500px) and (max-width:800px) {
+        body {
+            background-color: yellow;
+            text-align: justify;
+        }
+
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer ';
+        }
+        span{
+            display: inline;
+            text-align: center;
+        }
+    }
+    
+    @media (min-width: 800px) {
+        body {
+            background-color: green;
+            text-align: justify;
+        }
+    }
+
+    .bdr {
+        border: 2px solid black;
+        padding: 10px 23px;
+        background-color: wheat;
+    }
+
+    nav {
+        grid-area: navbar;
+        text-align: center;
+    }
+
+    section {
+        grid-area: section;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    footer {
+        grid-area: footer;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container ">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span> 
+        </nav>
+
+        <section class="bdr">
+            <h2>Learn CSS in hindi</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore blanditiis aliquid rerum modi consectetur, tenetur ratione laudantium beatae recusandae reiciendis. Facilis, sunt voluptatum sint, nam officiis ad eum reprehenderit tempore architecto ab iste sit voluptatem? Optio voluptatibus dolores eos ut quas provident praesentium culpa, vel quasi reiciendis corrupti, deserunt autem quisquam quam excepturi illo. Qui iste magnam itaque recusandae nihil minima, nostrum, quis praesentium earum soluta non autem laboriosam voluptatibus fuga laudantium culpa unde ea esse id animi veniam sint eum eligendi deleniti. Dolorem saepe perferendis, repellat non aut facere!</p>
+        </section>
+
+        <aside class="bdr">
+            <h1>More about us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laborum ipsum molestias, minima nobis dolor deserunt delectus repudiandae, iure sint aperiam! Esse, corporis. Aliquid amet, fugiat repudiandae vel quod ducimus nam doloremque eos, ipsa quibusdam asperiores, a dicta eveniet voluptates? Voluptatum nostrum debitis dolorum ab sit mollitia, laudantium quia est!</p>
+        </aside>
+
+    </div>
+    <footer class="bdr">Copyright CodeWithHarry 2020</footer>
+</body>
+</html>
