@@ -1,119 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Navbar project</title>
 </head>
 <style>
-    *{
-        margin: 0px;
-        padding: 0px;
-        font-family: 'Baloo Thambi 2', cursive;
+  body{
+    background: url("bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+  *{
+    margin: 2px;
+    padding: 2px;
+    font-family: sans-serif;
+  }
+  li{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+  }
+  a:hover{
+    color: orange;
+  }
+  .nav{
+    width: 100%;
+    height: 20px;
+    max-width: 100%;
+    margin: 10 auto;
+    align-items: center;
+    display: block;
+    background-color: wheat;
+    grid-template-columns: 2rem;
+    text-align: center
+  }
+  .actionbtn{
+     background-color: orange;
+     color: white;
+     padding: 0.5rem 1rem;
+     border: none;
+     outline: none;
+     border-radius: 20px;
+     font-size: 0.8rem;
+     font-weight: bold;
+     cursor: pointer;
+     transition: scale 0.2 ease;
+  }
+  .actionbtn:hover{
+    scale: 1.05;
+    color: white;
+  }
+  .actionbtn:active{
+    scale: 0.95;
+  }
+  .bdr {
+    border: 2px solid black;
+    padding: 10px 23px;
+    background-color: wheat;
+    grid-template-columns: 2rem;
     }
-    nav {
-        display: flex;
-        padding: 0 2 3px;
-        background-color: black;
-    }      
-    .item {
-        padding: 3px 8px;
-        list-style: none;
-    }    
-    .item a {
-        color: white;
-        text-decoration: none;
-        padding: 8px 8px;
-        display: block;
-        font-size: 20px;
-        font-weight: bold;
-        font-family: 'Baloo Thambi 2', cursive;
-    }
-    .item a:hover {
-        background: white;
-        color: black;
-        border-radius: 10px;
+
+  @media only screen and (max-width:500px) {
+    body {
+        text-align: justify;
     }
     .container {
-        border: 2px solid black;
-        opacity: 0.8;
-        padding: 0px 30px;
-        margin: 0px auto;
-        max-width: 80%;
-        background-color: rgb(228, 239, 252);
-        height: 200vh;
-        width: 200vh;
+        grid-template-areas:
+            'navbar navbar navbar navbar';
     }
-    body{
-        background: url("https://i.pinimg.com/originals/c6/7c/c1/c67cc114fc289a3eacc442da873053b2.jpg");
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    h3 {
+    span{
+        display: block;
         text-align: center;
-        margin 10px 0px;
     }
-    h4 {
-        font-family: 'Righteous', cursive;
-        padding: 6px 0px;
-    }   
-
+    .nav{
+        width: 100%;
+        height: 110px;
+    }
+}
+@media (min-width: 500px) and (max-width:1200px) {
+    body {
+        text-align: justify;
+    }
+    .container {
+        grid-template-areas:
+            'navbar navbar navbar navbar';
+    }
+    span{
+        display: inline;
+        text-align: center;
+    }
+}
 </style>
 <body>
-    <nav>
-        <li class="item"><a href="#">Home</a></li>
-        <li class="item"><a href="#">About</a></li>
-        <li class="item"><a href="#">MHFW Website</a></li>
-        <li class="item"><a href="#">Hospitals</a></li>
-        <li class="item"><a href="#">Contact Us</a></li>
+  <div class="container">
+    <nav class="nav">
+      <span><a href="#">Home</a></span>
+      <span><a href="#">About</a></span>
+      <span><a href="#">Services</a></span>
+      <span><a href="#">Contact</a></span>
+      <a href="#" class="actionbtn">Get started</a>
     </nav>
-
-    <div class="container">
-    <h3>Covid-19 STAY HOME STAY SAFE</h3>
-
-    <div class="box">
-    <h4>IndiaFightsCorona COVID-19</h4>
-    <p>Government of India is taking all necessary steps to ensure that we are prepared well to face the challenge and threat posed by the growing pandemic of COVID 19 – the Corona Virus. With active support of the people of India, we have been able to contain the spread of the Virus in our country. The most important factor in preventing the spread of the Virus locally is to empower the citizens with the right information and taking precautions as per the advisories being issued by Ministry of Health & Family Welfare.</p>
-    </div>
-
-    <div class="box">
-        <h4>#StayHome - How to protect yourself</h4>
-        <h3>Dos</h3>
-        <p>
-        <ul>
-            <li>Wash your hands regularly for 20 seconds, with soap and water or alcohol-based hand rub</li>
-            <li>Cover your nose and mouth with a disposable tissue or flexed elbow when you cough or sneeze</li>
-            <li>Avoid close contact (1 meter or 3 feet) with people who are unwell</li>
-            <li>Stay home and self-isolate from others in the household if you feel unwell</li>
-        </ul>
-        </p>
-
-        <h3>Don'ts</h3>
-        <p>
-        <ul>
-            <li>Touch your eyes, nose, or mouth if your hands are not clean</li>
-        </ul>
-        </p>
-    </div>
-
-    <div class="box">
-        <h4>#FAQs - Frequently asked questions</h4>
-        <div class="question">
-            <p>Q: What are the symptoms of the coronavirus disease?</p>
-            <p>A: The most common symptoms are fever, cough, shortness of breath, and breathing difficulties. In more severe cases infection can cause pneumonia, severe acute respiratory syndrome, and even death. The period within which the symptoms would appear is 2-14 days.</p>
-        </div>
-
-        <div class="question">
-            <p>Q: What is the recovery time for the coronavirus disease?</p>
-            <p>A: Using available preliminary data, the median time from onset to clinical recovery for is approximately 2 weeks and is 3-6 weeks for patients with severe or critical disease.</p>
-        </div>
-
-        <div class="question">
-            <p>Q: How long does the coronavirus last on surfaces.</p>
-            <p>A: It is not certain how long the virus that causes COVID-19 survives on surfaces, but it seems to behave like other coronaviruses. Studies suggest that coronaviruses (including preliminary information on the COVID-19 virus) may persist on surfaces for a few hours or up to several days.</p>
-        </div>
-    </div>
+  </div>
 </body>
 </html>
