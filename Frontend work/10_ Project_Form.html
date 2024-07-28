@@ -1,3 +1,11 @@
+<!-- 
+1. <form>:
+    The <form> element is used to create an HTML form for user input.
+2. <label>:
+    The <label> element is used to define a label for an <input> element.  
+    The association between the <label> and the input element is created using the for attribute in the <label> element, which matches the id attribute of the input element.  
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,7 +38,9 @@
             <br>
 
             <div>
-                Gender: Male<input type="radio" name="Mygender" id="name"> Female<input type="radio" name="Mygender">
+                Gender: 
+                Male<input type="radio" name="Mygender" id="name"> 
+                Female<input type="radio" name="Mygender">
                 Other<input type="radio" name="Mygender">
             </div>
             <br>
@@ -44,9 +54,9 @@
         <div>
             <label for="car">Car
                 <select name="Mycar">
-                    <option value="Ind">None</option>
-                    <option value="Swt">Tata</option>
-                    <option value="Swt">Renault</option>
+                    <option value="None">None</option>
+                    <option value="Tata">Tata</option>
+                    <option value="Reno">Renault</option>
                 </select>
             </label>
         </div>
