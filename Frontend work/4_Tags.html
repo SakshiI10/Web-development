@@ -1,3 +1,20 @@
+<!-- 
+<a>: 
+    The <a> tag in HTML is used to create hyperlinks. 
+    Attributes of the <a> Tag:
+        href (Hypertext Reference):
+            <a href="https://www.example.com">Visit Example.com</a>
+
+        target:
+            Purpose: Specifies where to open the linked document.
+            Values:
+                _self: Opens the link in the same window/tab (default).
+                _blank: Opens the link in a new window/tab.
+                _parent: Opens the link in the parent frame.
+                _top: Opens the link in the full body of the window.
+            <a href="https://www.example.com" target="_blank">Visit Example.com</a>
+            -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,14 +28,13 @@
     <a href="https://facebook.com" target="_blank">Go to facebook</a><br>
     <a href="https://twitter.com" target="_blank">Go to twitter</a><br>
     <a href="https://linkedin.com" target="_blank">Go to Linkedin</a><br>
-    <a href="/tut4.html" target="_blank">Tut 4</a>
-    <a href="/tut5.html" target="_blank">Tut 5</a>
+    <a href="/1_HelloWorld.html" target="_self">File 1</a><br>
+    <a href="/2_MetaTags.html" target="_parent">File 2</a><br>
+    <a href="/3_Tags.html" target="_top">File 3</a><br>
 
     <!-- Image is not present hence alt text is shown -->
     <!-- <img src="harry.jpg" alt="Error loading image"> -->
     <img src="abc.jpg" width="233" height="34">
     <img src="xyz.jpg" width="233" height="34">
-
-
 </body>
 </html>
