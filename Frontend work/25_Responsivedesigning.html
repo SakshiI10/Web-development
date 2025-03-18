@@ -19,6 +19,8 @@
     h1{
         text-align: center;
     }
+    /* em depends on its parent, so #first follows .container { font-size: 10px; }.
+📌 rem depends on html, so #second follows html { font-size: 25px; }. */
     #first{
         font-size: 2em;
         padding: 2em;
