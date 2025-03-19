@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 1. Making webpage look responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Before and After Pseudo Selector</title>
 </head>
+
 <style>
     body {
         background-color: black;
@@ -14,6 +16,7 @@
         margin: 0%;
         padding: 0%;
     }  
+    /* header::before width: 100% → Background image adapts to screen size, making  webpage look responsive*/
     header::before{
         background: url('https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567_960_720.jpg') no-repeat center center/cover;
         content: "";
@@ -25,15 +28,15 @@
         z-index: -1;
         opacity: 0.5;
     }
+    /* display: flex; Makes the navbar flexible, enables it to look responsive. */
     .navigation {
         display: flex;
     }
-
     li {
         list-style: none;
         padding: 23px 23px;
     }
-
+    /* display: flex; Makes the navbar flexible, enables it to look responsive. */
     section {
         margin: 3px 200px;
         display: flex;
@@ -43,10 +46,6 @@
         height: 250px; */
         justify-content: center;
     }
-
-    /* section::before{
-        content: "This is a content";
-    } */
     h1 {
         font-size: 4em;
     }
