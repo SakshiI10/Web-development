@@ -5,20 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Creation</title>
+    <!-- CSS Grid (fr units) dynamically adjusts layout
+    Grid columns are flexible and proportional
+    Gap and padding ensure elements don’t look crowded  -->
     <style>
         .container{
         display: grid;
-        /* grid-template-columns: 300px 100px 100px; */
-        /* grid-template-columns: 300px auto 100px; */
-
+        
         /* Size of the grid */
+        /* grid-template-columns: 300px auto 100px; */
         grid-template-columns: 1fr 4fr 1fr;                     
 
         /* Uniform size of the grid: (columns, auto size)*/
         /* grid-template-columns: repeat(3, auto); */
 
         /* Gap between grids */
-        grid-gap: 2rem;
+        grid-gap: 1rem;
     }
     .item{
         background-color: rgb(224, 107, 107);

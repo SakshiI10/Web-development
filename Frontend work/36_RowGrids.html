@@ -8,8 +8,11 @@
     <style>
     .grid{
         display: grid;
+        /* For 1, 2 and 3 row */
         grid-template-rows: 1fr 1fr 4fr;
+        /* For 4 row */
         grid-auto-rows: 2fr;
+        /* Uniform size of the grid: (columns, auto size) */
         grid-template-columns: repeat(3, 2fr);
         grid-gap: 1rem;
     }

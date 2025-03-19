@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 1. Making webpage look responsive  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transform property in CSS</title>
 </head>
+
 <style>
+    /* 2. Removing Default Margins & Padding */
     *{
         margin: 0px;
         padding: 0px;
     }
+    /* 3. Flexbox for Centering (display: flex;) */
     .container{
         height: 80vh;
         background-color: grey;
@@ -18,6 +22,7 @@
         justify-content: center;
         align-items: center;   
     }
+    /* 4. transition: all 2s ease-out; smoothly animates transformations, making UI interactions feel fluid. */
     #box{
         display: flex;
         height: 200px;
@@ -27,6 +32,7 @@
         align-items: center;
         transition: all 2s ease-out;
     }
+    /* 5. transform: translate(100px, 100px); moves the box dynamically, adjusting based on screen size. */
     #box:hover{
         /* transform: rotate(45deg); */
         /* transform: skew(45deg); */
@@ -37,6 +43,7 @@
 
     }
 </style>
+
 <body>
     <div class="container">
         <div id="box">
