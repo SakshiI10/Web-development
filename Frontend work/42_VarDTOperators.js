@@ -1,7 +1,7 @@
 var a = 78;
 var b = "Sakshi";
 c = 34.55;
-// console.log(c);
+console.log(c);
 
 // Operators in JavaScript
 // Operand - entities on which operators operate
@@ -19,11 +19,11 @@ var num1 = 2;
 var num2 = 9;
 
 // Arithmetic operators in action in JavaScript
-//console.log("The value of num1 + num2 is " + (num1 + num2));
-//console.log("The value of num1 - num2 is " + (num1 - num2));
+// console.log("The value of num1 + num2 is " + (num1 + num2));
+// console.log("The value of num1 - num2 is " + (num1 - num2));
 //console.log("The value of num1 * num2 is " + (num1 * num2));
 //console.log("The value of num1 / num2 is " + (num1 / num2));
-//console.log("The value of num1 ** num2 is " + (num1 ** num2));
-//console.log("The value of num1++ is " + (num1++));
-//console.log("The value of ++num1 is " + (++num1));
-//console.log("The value of num1-- is " + (num1--));
+// console.log("The value of num1 ** num2 is " + (num1 ** num2));
+// console.log("The value of num1++ is " + (num1++));
+// console.log("The value of ++num1 is " + (++num1));
+console.log("The value of num1-- is " + (num1--));
