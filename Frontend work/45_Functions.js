@@ -11,10 +11,10 @@ function sum(a, b, c) {
     // console.log("Function is returned");
 }
 
-let name = "Harry";
-let name1 = "Shubham";
-let name2 = "Rohan";
-let name3 = "Sagar";
+let name = "abc";
+let name1 = "def";
+let name2 = "ghi";
+let name3 = "jkl";
 let greetText1 = "Good Morning";
 greet(name, greetText1);
 greet(name1, greetText1);
