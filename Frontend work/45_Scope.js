@@ -1,3 +1,7 @@
+// A block {} groups code together.
+// let and const follow block scope (only work inside {}).
+// var ignores block scope (but follows function scope).
+
 let a = "u";
 {
 let a = "u6";

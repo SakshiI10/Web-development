@@ -81,3 +81,6 @@ var y=56
 console.log(true && true)
 console.log(true || true)
 console.log(!true)
+
+console.log(5 == "5");  // checks only value
+console.log(5 === "5"); // checks both value and type
