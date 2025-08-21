@@ -2,7 +2,7 @@
 
 // 1. document.getElementById("paste_id_here")
 
-// 2. document.getElementById("paste_id_here").click(): the clilck will be happened programmatically
+// 2. document.getElementById("paste_id_here").click(): the click will happen programmatically.
 
 // 3. id_name: gives you the id 
 

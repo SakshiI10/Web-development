@@ -1,5 +1,8 @@
+<!-- A pseudo-selector (also called a pseudo-class) is a keyword added to a selector that targets elements based on their state, position, or behavior, without needing to add classes or IDs. -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,42 +10,50 @@
     <title>Pseudo Selectors</title>
 </head>
 <style>
-    .container{
+    .container {
         width: 233px;
         margin: auto;
     }
-    a[target]{
+
+    a[target] {
         font-size: 44px;
         color: violet;
     }
-    a[target='_self']{
+
+    a[target='_self'] {
         font-size: 14px;
         color: blue;
-    } 
-    input{
+    }
+
+    input {
         display: block;
     }
-    input[type='text']{
+
+    input[type='text'] {
         padding: 20px;
         border: 2px solid red;
     }
-    input[type='email']{
+
+    input[type='email'] {
         color: crimson;
         border: 2px solid black;
     }
+
     /* li:nth-child(3){
         color: red;
     }
     li:nth-child(2n){
         color: orchid;
     } */
-    li:nth-child(even){
+    li:nth-child(even) {
         color: rgb(255, 0, 0);
     }
-    li:nth-child(odd){
+
+    li:nth-child(odd) {
         color: rgb(9, 255, 0);
     }
 </style>
+
 <body>
     <div class="container">
 
@@ -67,7 +78,8 @@
             <li class="item" id="item4">Item9</li>
             <li class="item" id="item5">Item10</li>
         </ul>
-        
+
     </div>
 </body>
+
 </html>

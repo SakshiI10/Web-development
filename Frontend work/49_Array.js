@@ -21,4 +21,4 @@ console.log(arr2.toString())
 
 console.log(arr2.sort())
 
-// Refer more array meethods from: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+// Refer more array meethods from: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array 
